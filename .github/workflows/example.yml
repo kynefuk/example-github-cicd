@@ -1,0 +1,8 @@
+name: Example
+on: pull_request
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "${{ toJson(github) }}"
